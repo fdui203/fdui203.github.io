@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bryce's Bait and Tackle</title>
+  <style>
+    body {
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #4CAF50;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    header a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    
+    .upgrade {
+      display: inline-block;
+      padding: 20px;
+      margin: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Contact</a>
+  </header>
+  
+  <div id="bryce-info">
+    <img src="bryce-logo.png" alt="Bryce's Bait and Tackle">
+    <p>Welcome to Bryce's Bait and Tackle! We offer a wide range of fishing gear and equipment to level up your fishing experience.</p>
+  </div>
+  
+  <div class="upgrade">
+    <h2>Golden Rod</h2>
+    <p>An epic rod that increases your fishing skills by 20%.</p>
+    <button onclick="purchaseUpgrade('Golden Rod')">Purchase</button>
+  </div>
+  
+  <div class="upgrade">
+    <h2>Magic Lure</h2>
+    <p>A mystical lure that attracts rare fish species.</p>
+    <button onclick="purchaseUpgrade('Magic Lure')">Purchase</button>
+  </div>
+  
+  <script>
+    function purchaseUpgrade(upgradeName) {
+      alert(`Congratulations! You've purchased the ${upgradeName}. Get ready to level up your fishing game!`);
+    }
+  </script>
+</body>
+</html>
